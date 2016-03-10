@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PhaseDetails">
+   <children>
+      <TableView fx:id="phase1TableView" layoutX="14.0" layoutY="31.0" prefHeight="520.0" prefWidth="300.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="631.0" AnchorPane.topAnchor="31.0">
+        <columns>
+          <TableColumn fx:id="p1FirstTermColumn" editable="false" minWidth="100.0" prefWidth="100.0" sortable="false" text="1. wyraz" />
+          <TableColumn fx:id="p1MultiplierColumn" editable="false" minWidth="100.0" prefWidth="100.0" sortable="false" text="Iloraz" />
+            <TableColumn fx:id="p1SumColumn" editable="false" minWidth="100.0" prefWidth="100.0" sortable="false" text="Suma" />
+        </columns>
+      </TableView>
+      <TableView fx:id="phase2TableView" layoutX="323.0" layoutY="31.0" prefHeight="520.0" prefWidth="300.0">
+        <columns>
+          <TableColumn fx:id="p2FirstTermColumn" editable="false" minWidth="100.0" prefWidth="100.0" sortable="false" text="1. wyraz" />
+          <TableColumn fx:id="p2MultiplierColumn" editable="false" minWidth="100.0" prefWidth="100.0" sortable="false" text="Iloraz" />
+            <TableColumn fx:id="p2SumColumn" editable="false" minWidth="100.0" prefWidth="100.0" sortable="false" text="Suma" />
+        </columns>
+      </TableView>
+      <TableView fx:id="mergeTableView" layoutX="631.0" layoutY="31.0" prefHeight="520.0" prefWidth="300.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="631.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="31.0">
+        <columns>
+          <TableColumn fx:id="mergeFirstTermColumn" editable="false" minWidth="100.0" prefWidth="100.0" sortable="false" text="1. wyraz" />
+          <TableColumn fx:id="mergeMultiplierColumn" editable="false" minWidth="100.0" prefWidth="100.0" sortable="false" text="Iloraz" />
+            <TableColumn fx:id="mergeSumColumn" editable="false" minWidth="100.0" prefWidth="100.0" sortable="false" text="Suma" />
+        </columns>
+      </TableView>
+      <Label layoutX="142.0" layoutY="14.0" text="Taśma 1" />
+      <Label layoutX="454.0" layoutY="14.0" text="Taśma 2" />
+      <Label layoutX="759.0" layoutY="14.0" text="Scalenie" />
+      <Button fx:id="closeButton" layoutX="374.0" layoutY="561.0" mnemonicParsing="false" onAction="#close" text="Zamknij" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="368.0" AnchorPane.topAnchor="561.0" />
+   </children>
+</AnchorPane>
